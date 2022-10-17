@@ -15,38 +15,42 @@
   </head>
   <body>
     <div class="background">
-      <h2 id="clock">00:00:00</h2>
-      <form class="login-form hidden">
-        <input
-          class="login_name"
-          required
-          maxlength="15"
-          type="text"
-          placeholder="What is your name?"
-        />
-        <input class="login" type="submit" value="Log In" />
-      </form>
-      <h1 id="greeting" class="hidden"></h1>
-      <form id="todo-form">
-        <input
-          class="todo_list"
-          type="text"
-          placeholder="Write a To Do and Press Enter"
-          required
-        />
-      </form>
-      <ul id="todo-list"></ul>
-      <div id="quote">
-        <span class="quotes"></span>
-        <span class="authors"></span>
+      <div class="main">
+        <h2 id="clock">00:00:00</h2>
+        <form class="login-form hidden">
+          <input
+            class="login_name"
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <input class="login" type="submit" value="Log In" />
+        </form>
+        <div id="quote">
+          <span class="quotes"></span>
+          <span class="authors"></span>
+        </div>
       </div>
-      <div class="weather">
-        <span></span>
-        <span></span>
-      </div>
-      <form class="logout_form hidden">
-        <input class="logout" type="submit" value="Log Out" />
-      </form>
+      <section class="ToDoList hidden">
+        <div class="weather hidden">
+          <span></span>
+          <span></span>
+        </div>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form">
+          <input
+            class="todo_list"
+            type="text"
+            placeholder="Write a To Do"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+        <form class="logout_form hidden">
+          <input class="logout" type="submit" value="Log Out" />
+        </form>
+      </section>
     </div>
   </body>
 </html>
