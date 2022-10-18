@@ -24,8 +24,6 @@ function onLoginSubmit(event) {
 }
 
 function settings() {
-  paintLogout();
-  paintWeather();
   todoList.classList.remove(HIDDEN_CLASSNAME);
   mainWidth();
   quoteStyle();
@@ -49,20 +47,10 @@ function quoteStyle() {
 
 function onLogoutSubmit() {
   localStorage.clear();
-  logoutForm.classList.add(HIDDEN_CLASSNAME);
 }
 
 function paintGreetings(username) {
-  greeting.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerText = `${username}'s To Do List`;
-}
-
-function paintLogout() {
-  logoutForm.classList.remove(HIDDEN_CLASSNAME);
-}
-
-function paintWeather() {
-  weather.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
