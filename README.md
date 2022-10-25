@@ -1,5 +1,7 @@
 # Momentum
 
+<img width="50%" src="./capture_img/Momentum_img1.png"><img width="50%" src="./capture_img/Momentum_img2.png">
+
 자바스크립트를 이용한 To Do List
 
 ## 추가해볼 기능
